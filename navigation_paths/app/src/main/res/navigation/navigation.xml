@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleViewFragment">
+
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.navigation_paths.MusicFragment"
+        android:label="MusicFragment"
+        tools:layout="@layout/fragment_music">
+        <action
+            android:id="@+id/action_musicFragment_to_titleViewFragment"
+            app:destination="@id/titleViewFragment"
+            app:popUpTo="@id/titleViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/portraitFragment"
+        android:name="com.example.navigation_paths.PortraitFragment"
+        android:label="fragment_portrait"
+        tools:layout="@layout/fragment_portrait" >
+        <action
+            android:id="@+id/action_portraitFragment_to_titleViewFragment"
+            app:destination="@id/titleViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleViewFragment"
+        android:name="com.example.navigation_paths.TitleViewFragment"
+        android:label="TitleViewFragment"
+        tools:layout="@layout/fragment_title_view">
+        <action
+            android:id="@+id/action_titleViewFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_titleViewFragment_to_portraitFragment"
+            app:destination="@id/portraitFragment" />
+    </fragment>
+</navigation>

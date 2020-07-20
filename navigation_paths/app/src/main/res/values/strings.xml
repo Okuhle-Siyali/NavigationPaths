@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">navigation_paths</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_instruction">Please select the button to view Music information</string>
+    <string name="portrait_instruction">Please select the button to view Portrait information</string>
+    <string name="instruction">You have two options either you view the Portrait Information or you view the Music Information below:</string>
+    <string name="music_button">Select Music Info</string>
+    <string name="portrait_button">Select Portrait Info</string>
+</resources>
